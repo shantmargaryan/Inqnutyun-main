@@ -1,0 +1,81 @@
+.gallery {
+    max-width: 1075px !important
+}
+
+.gallery__container {}
+
+
+.gallery__lable {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 50px
+}
+
+.Pagination__arrow-btn {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #781214;
+    transition: background-color 0.5s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #781214
+    }
+
+    &:hover svg {
+        fill: #fff;
+        transition: fill 0.5s
+    }
+}
+
+.Pagination__arrow {
+    width: 15px;
+    height: 10px;
+    fill: #781214;
+    vertical-align: middle
+}
+
+.Pagination__arrow_left {
+    transform: rotate(90deg)
+}
+
+.Pagination__arrow_right {
+    transform: rotate(-90deg)
+}
+
+.Pagination__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.Pagination__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    border: 2px solid #781214;
+    color: #781214;
+    font-weight: 500;
+    transition: background-color 0.5s, color 0.5s;
+
+    &:hover {
+        background-color: #781214;
+        color: #fff
+    }
+}
+
+.Pagination__btn_active {
+    background-color: #781214;
+    color: #fff
+}

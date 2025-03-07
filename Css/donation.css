@@ -1,0 +1,336 @@
+/* ************DONATION FORM SECTION START************ */
+
+.donation {}
+
+.donation__container {}
+
+.donation__title {
+    margin-block-end: 30px;
+    color: #090E0D !important;
+}
+
+.donation__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    margin-block-end: 10%;
+
+    @media(min-width:992px) {
+        flex-direction: row;
+    }
+}
+
+.donation__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 50%;
+    transition: transform 0.5s,
+        opacity 1s;
+
+    &.scroll-anim {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    &.scroll-anim_active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.donation__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-block-end: 15px;
+}
+
+.donation__item {}
+
+.donation__coins {
+    padding: 12px 20px 12px 21px;
+    border-radius: 6px;
+    color: #666;
+    font-weight: 600;
+    border: 1px solid rgba(168, 168, 168, 0.42);
+    background-color: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    transition: background-color 0.3s,
+        color 0.3s;
+}
+
+.donation__coins_active {
+    background-color: #0D0D0D;
+    color: #fff;
+
+}
+
+.donation__input {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    color: #636B6A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: text;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.donation__input__name {
+    flex-grow: 1;
+}
+
+.donation__name-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media(min-width:992px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.donation__card-transfer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.donation__texts {
+    margin-block-end: 40px;
+}
+
+.donation__card-title {
+    margin-block-end: 10px;
+    color: #585858;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.579px;
+    letter-spacing: 0.737px;
+}
+
+.donation__card-text {
+    color: rgba(88, 88, 88, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.579px;
+    letter-spacing: 0.737px;
+}
+
+.donation__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.donation__img {}
+
+.donation__label {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.donation__card-number {
+    flex-grow: 1;
+    color: #636B6A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: text;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.donation__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.donation__date-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    & .donation__label:nth-child(1) {
+        flex-grow: 1;
+    }
+}
+
+.donation__card-date {
+    color: #636B6A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: text;
+}
+
+.donation__card-cvv {
+    color: #636B6A;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: text;
+
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.donation__buttons {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.donation__button-idram {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 170px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #E5E5E5;
+    font-size: 18px;
+    line-height: 24px;
+    transition: background-color 0.3s,
+        color 0.3s;
+
+    &::after {
+        content: url(../Img/check.png);
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.donation__idram_active {
+    background-color: #0D0D0D;
+    color: #fff;
+
+    &::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.donation__idram {
+    width: 40px;
+    height: 40px;
+}
+
+
+.donation__checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.donation__checkbox {
+
+    &[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        accent-color: #95140E;
+    }
+}
+
+.donation__link {
+    color: #95140E;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+    &:hover {
+        color: #671012;
+    }
+}
+
+.donation__submit-button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #95140E;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.donation__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    flex-basis: 40%;
+    color: #666;
+    font-weight: 400;
+    line-height: 28px;
+    transition: transform 0.5s,
+        opacity 1s;
+
+    &.scroll-anim {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    &.scroll-anim_active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    @media(min-width:768px) {
+        text-align: start;
+    }
+}
+
+.donation__bank {}
+
+.donation__account {}
+
+.donation__idbank-account {}
+
+.donation__text {}
+
+
+/* ************DONATION FORM SECTION END************ */
+
+/* ************DONATION PAGE END************ */

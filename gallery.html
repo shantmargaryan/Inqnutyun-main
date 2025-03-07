@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ԻՆՔՆՈՒԹՅՈՒՆ</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/gallery.css">
+    <link rel="stylesheet" href="./Css/global.css">
+    <link rel="stylesheet" href="./videotube/videotube.min.css">
+    <link rel="stylesheet" href="./Css/tabs.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="container-header container">
+            <a class="logo" href="./index.html">
+                <svg class="logo-icon">
+                    <use xlink:href="./Img/sprite.svg#Logo" />
+                </svg>
+                <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+            </a>
+            <nav class="navbar">
+                <ul class="list-reset menu-ul-first">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="videolibrary">
+                                <button class="menu-link menu-link-videolibrary">
+                                    ՏԵՍԱԴԱՐԱՆ
+                                </button>
+                            </div>
+                            <ul class="videolibrary-content list-reset" id="videolibrary-content">
+                                <li><a href="./gallery.html" class="videolibrary-services">Բոլորը</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">Մարզեր</a></li>
+                                <li><a href="./gallery.html" class="videolibrary-services">Ազգագրություն</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="./fund.html">ՀԻՄՆԱԴՐԱՄ</a></li>
+                    <li><a href="./contact.html">ԿԱՊ</a></li>
+                </ul>
+
+            </nav>
+            <div class="burger-menu">
+                <ul class="list-reset menu-ul">
+                    <li>
+                        <div class="menu-link-hover">
+                            <div class="language">
+                                <button class="menu-link menu-link-language">
+                                    <svg class="menu-language-icon">
+                                        <use xlink:href="./Img/sprite.svg#language" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="language-content list-reset" id="language-content">
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#english" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#russia" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="language-services">
+                                        <svg class="language-icon">
+                                            <use xlink:href="./Img/sprite.svg#armenia" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./donation.html" class="button-header">
+                            ՆՎԻՐԱԲԵՐԵԼ
+                        </a>
+                    </li>
+                </ul>
+                <button class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <ul class="header-socials-list">
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#twitter" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#instagram" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#facebook" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#linkedin" />
+                </svg>
+            </a>
+        </li>
+        <li class="header-socials-item">
+            <a class="header-socials-link" href="#" target="_blank">
+                <svg class="header-socials-icon">
+                    <use xlink:href="./Img/sprite.svg#sideYoutube" />
+                </svg>
+            </a>
+        </li>
+    </ul>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main class="main">
+        <div class="main__overlay"></div>
+        <!-- HERO START -->
+        <section class="hero" style="background-image: url(./Img/himnadramimg.jpg);">
+            <div class="hero__container container">
+                <h1 class="hero__title title scroll-anim scroll-anim_once">
+                    Տեսադարան
+                </h1>
+                <div class="hero__links">
+                    <a class="hero__home-link" href="./index.html">
+                        Գլխավոր
+                    </a>
+                    <svg class="hero__arrow-icon">
+                        <use xlink:href="./Img/sprite.svg#smallArrow" />
+                    </svg>
+                    <span class="hero__subtitle">
+                        Տեսադարան
+                    </span>
+                </div>
+            </div>
+        </section>
+        <div class="gallery container">
+            <div class="tabs-wrapper scroll-anim scroll-anim_once">
+                <div class="tabs">
+                    <input type="radio" id="Բոլորը" name="tabs" checked />
+                    <label class="gallery__lable" for="Բոլորը">Բոլորը</label>
+
+                    <input type="radio" id="Մարզեր" name="tabs" />
+                    <label class="gallery__lable" for="Մարզեր">Մարզեր</label>
+
+                    <input type="radio" id="Ազգագրություն" name="tabs" />
+                    <label class="gallery__lable" for="Ազգագրություն">Ազգագրություն</label>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-content-1">
+                    <ul class="tab__list">
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content-2">
+                    <ul class="tab__list">
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation"
+                                    loading="lazy">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content-3">
+                    <ul class="tab__list">
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="tab__list">
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                        <li class="tab__item">
+                            <video class="tab__video" controls preload="none" poster="./Img/slidersImg.jpg">
+                                <source
+                                    src="./video/Ավանդական հայկական տարազի նշանակությունն ու առանձնահատկությունները.mp4"
+                                    type="video/mp4">
+                            </video>
+                            <h3 class="tab__title">
+                                Տեսանութի վերնագիրը
+                            </h3>
+                            <p class="tab__text">
+                                <img class="tab__img" src="./Img/galleryLocation.png" alt="galleryLocation">
+                                Նկարահանման վայրը
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Pagination">
+                <button class="Pagination__arrow-btn">
+                    <svg class="Pagination__arrow Pagination__arrow_left">
+                        <use xlink:href="./Img/sprite.svg#smallArrow" />
+                    </svg>
+                </button>
+                <ul class="Pagination__list">
+                    <li>
+                        <button class="Pagination__btn">
+                            1
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            2
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            3
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            4
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            5
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            6
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            7
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            8
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            9
+                        </button>
+                    </li>
+                    <li>
+                        <button class="Pagination__btn">
+                            10
+                        </button>
+                    </li>
+                </ul>
+                <button class="Pagination__arrow-btn">
+                    <svg class="Pagination__arrow Pagination__arrow_right">
+                        <use xlink:href="./Img/sprite.svg#smallArrow" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- HERO END -->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content1">
+                <a class="footer-logo" href="./index.html">
+                    <svg class="logo-icon">
+                        <use xlink:href="./Img/sprite.svg#Logo" />
+                    </svg>
+                    <strong class="logo-text">ԻՆՔՆՈՒԹՅՈՒՆ</strong>
+                </a>
+                <p class="footer-text">Կարճ ինֆո այստեղ։ Eu egestas imperdiet consectetur egestas ante aliquet posuere
+                    vitae.</p>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">Հիմնադրամ</h3>
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a class="footer-link" href="./fund.html#about">
+                            Մեր մասին
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="./fund.html#Board-of-trustees">
+                            Հոգաբարձուների խորհուրդ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="./fund.html#team">
+                            Թիմը
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="./fund.html#supporters">
+                            Աջակիցներ
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-link" href="./fund.html#projects">
+                            Նախագիծ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ՏԵՍԱԴԱՐԱՆ</h3>
+                <ul class="list-reset">
+                    <li class="footer-item"><a class="footer-link" href="./gallery.html">բոլորը</a></li>
+                    <li class="footer-item"><a class="footer-link" href="./gallery.html">Մարզեր</a></li>
+                    <li class="footer-item"><a class="footer-link" href="./gallery.html">Ազգագրություն</a></li>
+                </ul>
+            </div>
+            <div class="footer-content2">
+                <h3 class="footer-title">ԿԱՊ</h3>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="tel:+374-00-00-00">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#phone" />
+                            </svg>
+                            +374 00 000-000
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="mailto:z5C5o@example.com">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#email" />
+                            </svg>
+                            gagikidentity@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <a class="footer-contact-link" href="#">
+                            <svg class="footer-contact-icon">
+                                <use xlink:href="./Img/sprite.svg#location" />
+                            </svg>
+                            RA, Yerevan, Road 00
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer-socials-list">
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#twitter" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#instagram" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#facebook" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#linkedin" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socials-item">
+                        <a class="footer-socials-link" href="#" target="_blank">
+                            <svg class="footer-socials-icon">
+                                <use xlink:href="./Img/sprite.svg#youtube" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-content2">
+                <h3 class="footer-title">ԲԱԺԱՆԱՐԴԱԳՐՈՒԹՅՈՒՆ</h3>
+                <p class="footer-text">
+                    Ստացեք հիմնադրամի նորությունները և նախագծի կարևոր թարմացումներն էլ-փոստով
+                </p>
+                <form class="footer-form" action="#" enctype="multipart/form-data" method="post">
+                    <label class="footer-form-label">
+                        <svg class="footer-form-icon">
+                            <use xlink:href="./Img/sprite.svg#email" />
+                        </svg>
+                        <input class="footer-form-input" type="email" placeholder="էլ-փոստ" required>
+                    </label>
+                    <button class="footer-form-button" type="submit">
+                        Բաժանորդագրվել
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="container-deepfooter">
+            <p>© «Ինքնություն» Հիմնադրամ, 2024</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
