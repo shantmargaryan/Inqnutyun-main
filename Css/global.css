@@ -809,7 +809,7 @@ footer {
   color: #000;
   font-weight: 500;
 
-  @media(min-width:992px){
+  @media(min-width:992px) {
     padding: 10px 9px
   }
 }
@@ -842,9 +842,10 @@ footer {
 
 .tabs {
   display: flex;
+  gap: 8px;
+  padding-block-end: 10px;
   width: 100%;
   overflow: auto;
-  gap: 8px;
   margin-block-end: 4%;
 }
 
@@ -852,6 +853,7 @@ footer {
   .tabs {
     flex-wrap: wrap;
     overflow: hidden;
+    padding-block-end: 0px;
   }
 }
 
