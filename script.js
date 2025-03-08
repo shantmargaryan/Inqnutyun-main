@@ -275,7 +275,7 @@ if (document.querySelector(".carousel")) {
 
 
 const readMoreBtn = document.querySelector('.more-text-btn');
-
+const dots = document.querySelector('.dots');
 const text = document.querySelector('.show-text');
 
 if (text) {

@@ -662,6 +662,25 @@
     display: flex;
     align-items: center;
     gap: 5px;
+
+    &:nth-child(2) {
+        margin-inline-end: 20px;
+
+
+        @media(min-width:992px){
+            margin-inline-end: 0px;
+        }
+    }
+
+    & img {
+        width: 30px;
+        height: 30px;
+
+        @media(min-width:992px){
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 
 .region-information span {
@@ -1169,10 +1188,15 @@
 
 
 .show-text {
+    max-width: 320px;
     color: #000;
     font-weight: 600;
     line-height: 25px;
     letter-spacing: .06rem;
+
+    @media(min-width:992px){
+        max-width: 500px;
+    }
 }
 
 .more-text {
@@ -1190,20 +1214,8 @@
 }
 
 .more-text-btn {
-    margin-block: 15px;
-    padding: 8px 20px;
-    color: #000;
-    font-size: clamp(.75rem, 1.5vw, 1rem);
-    font-weight: 600;
-    line-height: 1rem;
-    letter-spacing: .06rem;
-    color: #671012;
-    border: 1px solid #671012;
-    transition: color 0.4s ease 0s,
-        background-color 0.4s ease 0s;
-
-    &:hover {
-        background-color: #671012;
-        color: #fff;
-    }
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font: 600 16px "Montserrat";
+    text-decoration: underline;
 }
