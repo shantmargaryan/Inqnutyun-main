@@ -4,7 +4,7 @@ if (HTMLScriptElement.supports && HTMLScriptElement.supports("speculationrules")
     const specRules = {
         prerender: [
             {
-                "urls": ["/index.html", "/gallery.html", "/fund.html", "/donation.html", "/contact.html"],
+                "urls": ["./index.html", "./gallery.html", "./fund.html", "./donation.html", "./contact.html"],
                 "eagerness": "immediate"
             }
         ],
@@ -274,18 +274,20 @@ if (document.querySelector(".carousel")) {
 
 
 
-const readMoreBtn = document.querySelector('.more-text-btn');
-const dots = document.querySelector('.dots');
-const text = document.querySelector('.show-text');
+const readMoreBtn = document.querySelectorAll('.more-text-btn');
+const dots = document.querySelectorAll('.dots');
+const text = document.querySelectorAll('.show-text');
 
 if (text) {
-    readMoreBtn.addEventListener('click', () => {
-        text.classList.toggle('show-more');
-        if (readMoreBtn.innerText === 'ցույց տալ ավելին') {
-            readMoreBtn.innerText = 'Ցույց տալ ավելի քիչ';
-        } else {
-            readMoreBtn.innerText = 'ցույց տալ ավելին';
-        }
-    });
+    readMoreBtn.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            text[index].classList.toggle('show-more');
+            if (readMoreBtn[index].innerText === 'Իմանալ ավելին') {
+                readMoreBtn[index].innerText = 'Փակել ավելին';
+            } else {
+                readMoreBtn[index].innerText = 'Իմանալ ավելին';
+            }
+        });
+    })
 }
 

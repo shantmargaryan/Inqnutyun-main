@@ -1188,15 +1188,10 @@
 
 
 .show-text {
-    max-width: 320px;
+    margin-block-end: .625rem;
+    text-wrap: nowrap;
     color: #000;
     font-weight: 600;
-    line-height: 25px;
-    letter-spacing: .06rem;
-
-    @media(min-width:992px){
-        max-width: 500px;
-    }
 }
 
 .more-text {
@@ -1211,6 +1206,8 @@
 
 .show-text.show-more .more-text {
     display: block;
+    text-wrap: wrap;
+    width: min(100%, 50ch);
 }
 
 .more-text-btn {
